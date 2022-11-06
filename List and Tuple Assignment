@@ -1,0 +1,36 @@
+'''Q1 : Creat a list
+		a. Add a element to the list
+        b. Remove the 3rd element from the list
+        c. Use pop method to remove the 5th element
+'''
+newlist = ["hello","sir","this","is","me","something","text"]
+print("List : ",newlist)
+newlist.remove("this")
+print("updated list after removal : ",newlist)
+newlist.pop(5)
+print("list after pop : ",newlist)
+
+#Q2 : Creat a Tuple and modify it by removing 4th element *Hint : convert first to list and then convert back to tuple
+
+newtuple = ("one","two","three","four","five","six")
+print("this is tuple: ",newtuple)
+print(type(newtuple))
+newlist = list(newtuple)
+print("List after conversion :",newlist)
+print(type(newlist))
+newtuple = tuple(newlist)
+print("after conversion of list: ",newtuple)
+print(type(newtuple))
+
+#Q3 : Create a tuple and print it's elements using for and while loop
+
+newtuple = ("one","two","three","four","five","six")
+print("By for Loop")
+for i in newtuple:
+  print(i)
+print("==============")
+print("By for while loop")
+x = 0
+while x < len(newtuple):
+  print(newtuple[x])
+  x = x + 1
